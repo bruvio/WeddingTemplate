@@ -1,0 +1,43 @@
+
+{% load static %}
+{% load widget_tweaks %}
+ {% block content %}  
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content= "width=device-width,initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="{% static 'RSVP.css' %}">
+      <title>J&A:: Home</title>
+      
+      <nav> 
+        <a href="{% url 'WeApp' %}">Home</a>
+        <a href="{% url 'itenary' %}">When/Where</a>
+        <a href="{% url 'FAQ' %}">FAQ</a>
+        <a href="{% url 'RSVP' %}">RSVP</a>
+        <a href="{% url 'Travel' %}">Travel</a>
+
+      </nav>
+  </head>
+  <body class="responsive-image">
+    <form action="{% url 'RSVP' %}" method="post">
+      {% csrf_token %}
+      <div class="container">
+            <h1>Please Join Us</h1>
+            <h2>on March-2024</h2>
+            Full-Name:<br>{% render_field form.name placeholder=" " class+="textbox"%}
+            <br> Phone:<br>{% render_field form.phone placeholder=" " class+="textbox"%}
+            <br>Attend:<br>{% render_field form.attend placeholder=" " class+="textbox"%}
+
+           <br> <button type="submit">Submit</button>
+
+            {% if form.name == 'Jacob' %}
+              <form action="{% url 'WeApp' %}">
+            {% endif %}
+    </form>
+      </div>
+      
+{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,148 @@
+nav
+{
+
+     word-spacing:1em;
+	height:1em;
+	text-decoration:none;
+    text-align: center;
+	font-family: Georgia, serif;
+	font-size: 20pt;
+    padding: 10px;
+}
+nav a               { text-decoration: none; }
+nav a:link          { color: rgb(3, 3, 3); }
+nav a:visited       { color: rgb(0, 0, 0); }
+nav a:hover         { color: rgb(255, 255, 255); }
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* Two equal columns */
+	grid-gap: 10px; /* Gap between columns */
+
+  }
+  
+  .left-column, .right-column {
+	padding: 10px;
+  }
+  
+  .left-column {
+	position: absolute;
+	right: 75%;
+	background-color: #dcf8c6;
+  }
+  
+  .right-column {
+	background-color: lightgreen;
+	position: absolute;
+	left: 75%;
+
+  }
+  body
+  {
+	margin: 0;
+  	padding: 0;
+	background-image: url('/static/images/FAQ2.JPG');
+	background-size: cover;
+  	background-position: center;
+  	background-repeat:initial;
+	
+  }
+.form-label
+{
+	color: black;
+	
+}
+.btn 
+{
+  left: -30px;
+}
+  .chat {
+	width: 300px;
+	border: solid 1px #EEE;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+  }
+  
+  .messages {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .message {
+	border-radius: 20px;
+	padding: 8px 15px;
+	margin-top: 5px;
+	
+	display: inline-block;
+  }
+  
+  .yours {
+	align-items: flex-start;
+  }
+  
+  .yours .message {
+	margin-right: 25%;
+	background-color: #EEE;
+	position: relative;
+  }
+  
+  .mine {
+	align-items: flex-end;
+  }
+  
+  .mine .message {
+	color: white;
+	margin-left: 25%;
+	background: rgb(0, 120, 254);
+	position: relative;
+  }
+
+  .question_container
+  {
+	width: 75%;
+	position: relative;
+	left:12.5%;
+	height: auto;
+  }
+  
+  .User_container
+  {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* Two equal columns */
+	
+  }
+  
+  .left_container
+  {
+	position: relative;
+	left:25%;
+	width: 45%;
+  }
+  .right_container
+  {
+	left:25%;
+	position: relative;
+	width: 55%;
+  }
+  
+  
+  .solid-line 
+  {
+	border: none;
+	border-top: 2px solid black;
+	margin: 20px 0;
+  }
+.User_container
+{
+	border-style: solid;
+	
+}
+form
+{
+	background-color: #ffffff3e;
+	position: relative;
+	left: 25%;
+	width: 50%;
+}

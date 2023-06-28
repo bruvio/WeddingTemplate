@@ -1,0 +1,74 @@
+{% load static %}
+{% load widget_tweaks %}
+{% block content %}  
+ <!DOCTYPE html>
+ <html>
+  <div class = picture>
+    <head>
+        <title>Page Title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'FAQ.css' %}">
+      </head>
+  <body>
+    <nav> 
+        <a href="{% url 'WeApp' %}">Home</a>
+        <a href="{% url 'itenary' %}">When/Where</a>
+        <a href="{% url 'FAQ' %}">FAQ</a>
+        <a href="{% url 'RSVP' %}">RSVP</a>
+        <a href="{% url 'Travel' %}">Travel</a>
+
+    </nav>
+    <br><br><br>
+    
+    <form action="{% url 'FAQ' %}" method="post">
+      {% csrf_token %}
+    <div class = 'User_container'>
+      <div class = 'left_container'>
+        <label for="exampleFormControlTextarea1" class="form-label">Name:</label>
+          {% render_field form.name placeholder="your name" class+="form-control"  %}
+            </div>
+              <div class = 'right_container'>
+                <label for="exampleFormControlTextarea1" class="form-label">Leave a Question:</label>
+                  {% render_field form.question placeholder="Ask a question"  class+="form-control"  %}
+                  </div>
+        
+          <div class="left_container">
+           <br> 
+              <button class="btn btn-primary" type="submit">Submit</button>
+              </div>      
+    </div>
+      
+  </form>
+  <br>
+
+    
+ 
+    
+    <div class = 'question_container'>
+      {% for x in Data_question %}
+    
+        <div class="yours messages">
+          <div class="message last">
+            {{x.question}}
+          </div>
+        </div>
+            <div class="mine messages">
+              <div class="message">
+                {% if x.Answer == Null %}
+                  UnAnswered
+                {% else %}
+                    {{x.Answer}}
+                {% endif %}
+              </div>
+            </div>
+        <hr class="solid-line">  
+        {% endfor %} 
+    </div>  
+    {% endblock %}
+
+    </body>
+  </div>
+</html>

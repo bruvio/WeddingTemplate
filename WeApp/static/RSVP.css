@@ -1,0 +1,108 @@
+nav
+{ 	
+  word-spacing:1em;
+	height:1em;
+	text-decoration:none;
+  text-align: center;
+	font-family: Georgia, serif;
+	font-size: 20pt;
+}
+
+nav a               { text-decoration: none; }
+nav a:link          { color: rgb(3, 3, 3); }
+nav a:visited       { color: rgb(0, 0, 0); }
+nav a:hover         { color: rgb(255, 255, 255); }
+
+h1
+{
+  text-align: center;
+  padding: 0px;
+  margin: 5px 5px;
+
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 100;
+}
+
+p.line {
+  margin: 0px auto 20px auto;
+  color: #999;
+  text-align: center;
+  padding: 0px;
+  margin: 5px 5px;
+  
+}
+
+body {
+  font-family:cursive;
+  font-size: 16px;
+  line-height: 1.5;
+  
+}
+
+.container {
+  margin-top: 500px;
+  text-align: center;
+  top: -300px;
+  background-color: rgba(245, 245, 245, 0.477);
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: solid;
+  position: relative;
+  transition: ease-in-out, 1s;
+}
+
+
+
+.responsive-image {
+ 
+  background-image: url('/static/images/RSVP2.JPG');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.textbox
+{
+  max-width: 90%;
+  margin-top: 20px;
+  
+  color: #333333;
+  background-color: #eeeeee;
+  border: 1px solid #000000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .col {
+    flex-basis: 100%;
+  }
+  .responsive-image {
+    max-width: 90%;
+    text-align: center;
+  }
+  .container
+  {
+    background-position:0;
+    top: -420px;
+  }
+  
+
+  .responsive-image 
+  {
+    max-width: 90%;
+    text-align: center;
+    font-size: 50%;
+  }
+
+  nav
+  {
+     font-size: 11pt; 
+  }
+  
+}

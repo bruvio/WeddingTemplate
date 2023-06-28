@@ -1,0 +1,99 @@
+{% load static %}
+{% load widget_tweaks %}
+{% block content %}  
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>Itenary</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{% static 'itenary.css' %}">
+
+
+    </head>
+   <body>
+        <nav> 
+          <a href="{% url 'WeApp' %}">Home</a>
+          <a href="{% url 'itenary' %}">When/Where</a>
+          <a href="{% url 'FAQ' %}">FAQ</a>
+          <a href="{% url 'RSVP' %}">RSVP</a>
+          <a href="{% url 'Travel' %}">Travel</a>
+  
+        </nav>
+        <div class="row">
+            <div class="column1">
+                <div class="container-grid">
+                  <img src="{{ image_url }}" alt="My Image" class="image">
+                </div>
+
+                <div class="container-grid">
+                  <div class="container-text">
+                    <h1>Welcome Party</h1> <br>
+                    <h2>Sunday November 12,2023</h2> <br>
+                    <h2>6:00 PM - 8:00PM</h2> <br>
+                    <h3>Sunset Cruise</h3> <br>
+                    <h4>Ladies Attire: Please wear bright colors, since we will be having a beach vibe</h4> <br>
+                    <h4>Gentleman Attire: Please wear bright colors, since we will be having a beach vibe</h4> <br>
+                    <h4> wedding events take place at the resort</h4>
+                  </div>
+                </div>
+
+                <div class="container-grid">
+                    <img src="{{ image_url4 }}" alt="My Image" class="image">
+                </div>
+
+            </div>
+            
+
+            <div class="column2">
+                  <img src="{{ image_url3 }}" alt="plane" class="plane">
+
+                  <div class="container">
+                  </div>
+                  <div class="container">
+                  </div>
+                  <div class="container">
+                  </div>
+                    
+            </div>
+
+            <div class="column3">
+                <div class="container-grid">
+                  <div class="container-text">
+                    <h1>Welcome Party</h1> <br>
+                    <h2>Sunday November 12,2023</h2> <br>
+                    <h2>6:00 PM - 8:00PM</h2> <br>
+                    <h3>Sunset Cruise</h3> <br>
+                    <h4>Ladies Attire: Please wear bright colors, since we will be having a beach vibe</h4> <br>
+                    <h4>Gentleman Attire: Please wear bright colors, since we will be having a beach vibe</h4> <br>
+                    <h4> wedding events take place at the resort</h4>
+                  </div>
+                </div>
+
+                <div class="container-grid">
+                      <img src="{{ image_url4 }}" alt="My Image" class="image">
+                </div>
+
+                <div class="container-grid">
+                  <div class="container-text">
+                    <h1>Welcome Party</h1> <br>
+                    <h2>Sunday November 12,2023</h2> <br>
+                    <h2>6:00 PM - 8:00PM</h2> <br>
+                    <h3>Sunset Cruise</h3> <br>
+                    <h4>Ladies Attire: Please wear bright colors, since we will be having a beach vibe</h4> <br>
+                    <h4>Gentleman Attire: Please wear bright colors, since we will be having a beach vibe</h4> <br>
+                    <h4> wedding events take place at the resort</h4>
+                  </div>
+                </div>
+                  
+
+            </div>
+
+{% endblock %}
+   </body>
+ </html>
+
+
+
+

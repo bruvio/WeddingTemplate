@@ -1,0 +1,181 @@
+
+nav{
+    font-size: larger;
+}
+
+.font
+{
+   font-size: 18pt;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.SmallScreens
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: fixed;
+    left: 45%;
+    top: 1%;
+    font-size: 0%;
+}
+
+.responsive-image {
+ 
+    background-image: url('/static/images/home.JPG');
+    background-size:cover;
+    background-position: 50% 65%;
+    background-repeat: no-repeat;
+    height: 100vh;  
+  }
+
+  #names
+  { 
+        position: absolute;
+        left: 34%;
+        max-width: 35%;
+        height: auto;
+        display: flex;  
+        bottom: 55%;
+    }
+
+.container2
+{  
+    position: absolute;
+    width: 10%;
+    text-align: center;
+    left: 88%;
+    top:90%;
+}
+
+.container3
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0%;
+    top:50%;
+}
+.font2
+  {
+    font-family: 'Cedarville Cursive', cursive;
+    letter-spacing: 10px;
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 80pt;
+  }
+.container
+{
+    max-width: 50;
+}
+
+.font1
+  {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 18pt;
+
+  }
+
+  
+
+  .font3
+  {
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 18pt;
+  }
+
+  .font4
+  {
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 18pt;
+  }
+
+@media screen and (max-width: 768px) 
+{
+    .SmallScreens
+    {
+        font-size: 18pt;
+    }
+
+    #names
+        { 
+            left: 15%;
+            max-width: 75%;
+        }
+
+    .navbar-toggler
+        {
+            position: fixed;
+            display: flex;
+            left: 90%;
+            top:1.5%;
+        }
+
+    #logo
+    {
+        left:1%;
+        width: 6%;
+        top: 50%;
+    }
+    .container2
+    { 
+        width: 25%; 
+      left:75%;
+      top:90%;
+    }
+}
+@media screen and (max-width: 425px) 
+{
+    .SmallScreens
+    {
+        font-size: 12pt;
+    }
+
+    .font
+    {
+        font-size: 12pt;
+    }
+
+    .responsive-image 
+    {
+        background-size: auto 100vh;
+    }
+    
+    #names
+    { 
+        left: 11%;
+        max-width: 80%;
+        top: 25%;
+    }
+
+    .navbar-toggler
+    {
+        left: 80%;
+        top: .75%
+    }
+   
+    .container2
+    { 
+      width: 50%; 
+      left:25%;
+      top:90%;
+      font-size: 10pt;
+    }
+    .container3
+    {
+        width: 100%;
+        left: 0%;
+        top:50%;
+    }
+    .font2
+      {
+        letter-spacing: 5px;
+        font-size: 40pt;
+      }
+
+}
