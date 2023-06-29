@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'WeApp',
     'widget_tweaks',
-    'lockdown',
+    
 ]
 
 MIDDLEWARE = [
@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'lockdown.middleware.LockdownMiddleware',
+   
 ]
 
 ROOT_URLCONF = 'Wedding.urls'
@@ -129,4 +129,3 @@ STATICFILES_DIR = [ os.path.join(BASE_DIR,'WeApp/static')]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-LOCKDOWN_PASSWORDS = ('AJJM-4951-AMBE-D3L2', 'beta')

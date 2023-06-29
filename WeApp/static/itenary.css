@@ -1,27 +1,26 @@
-nav
-{
-  border-style: solid;
-  
-  word-spacing:1em;
-	height:1em;
-	text-decoration:none;
-  text-align: center;
-	font-family: Georgia, serif;
-	font-size: 20pt;
-  padding: 10px;
+nav{
+  font-size: larger;
 }
 
-nav a               { text-decoration: none; }
-nav a:link          { color: rgb(3, 3, 3); }
-nav a:visited       { color: rgb(0, 0, 0); }
-nav a:hover         { color: rgb(255, 255, 255); }
+.font
+{
+ font-size: 18pt;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.SmallScreens
+{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: fixed;
+  left: 45%;
+  top: 1%;
+  font-size: 0%;
+}
 ul
 {
   margin: 0%;
   
 }
-
 
 .row {
     
@@ -36,47 +35,50 @@ ul
   }
   .column2 {
     position: relative;
-    flex: 4.5%;
+    flex: 2.5%;
     height: 1050px;
     
   }
 
   .column3 {
-    flex: 45%;
+    position: relative;
+    flex: 44%;
     height: 1050px;
      
   }
-  h1
+ .font1
   {
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    position: relative;
+    font-size: 30pt;
+    font-weight: 500;
+  }
+
+  .font2
+  {
+    top:10%;
+    background-color: rgb(179, 203, 183);
+    position: relative;
     font-size: 20pt;
+    font-weight: 500;
+  }
 
-  }
-  h2
+  .font3, .font5
   {
-    margin: 0;
-    padding: 0;
-   text-align: center;
-   font-size: 18pt;
-   background-color: rgb(179, 203, 183);
-   margin: 5px;
+   
+    position: relative;
+    font-size: 18pt;
   }
-  h3
+  
+  .font4
   {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 16pt;
-
+    top:5%;
+    position: relative;
+    background-color: rgb(179, 203, 183);
+    font-size: 18pt;
   }
-  h4
+  .font5
   {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 16pt;
+    top: 15%;
   }
   .image
   {
@@ -84,22 +86,39 @@ ul
     height: 100%;
   }
   
+  .pic1,.pic2,.pic3,.pic4
+  {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .pic1{background-image: url('/static/images/itenary1.JPG'); background-position: 50% 100%;}
+  .pic2{background-image: url('/static/images/Chapel.png');background-position: 50% 50%;}
+  .pic3{background-image: url('/static/images/Luau.png');background-position: 50% 20%;}
+  .pic4{background-image: url('/static/images/itenary1.JPG');background-position: 50% 100%;}
+
   .container-grid
   {
+    border-top: 1px solid;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 50%;
   }
+
   .container-text
   {
     position: relative;
-    top: 17%;
+    text-align: center;
+    top: 10%;
+    left: 5%;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 90%;
     height: 50%;
+    
   }
+
   .container
   {
     border-right: 2px solid black;
@@ -133,84 +152,137 @@ ul
     position: fixed;
     width: 3.5%;
     top: 35%;
-    left: 48.25%;
+    left: 48.75%;
     transform:  rotate(135deg);
   }
-
-
+  @media screen and (max-width: 1440px) {
+  .font1
+    {
+      font-size: 25pt;
+    }
+  .font2
+    {
+      font-size: 20pt;
+    }
+  .font3,.font4 , .font5
+    {
+      font-size: 15pt;
+    }
+  
+  .plane
+    {
+      left: 48.25%;
+    }
+}
+@media screen and (max-width: 1024px) {
+  .font1
+    {
+      font-size: 20pt;
+    }
+  .font2
+    {
+      font-size: 16pt;
+    }
+  .font3,.font4, .font5
+    {
+      font-size: 12pt;
+    }
+  
+}
+@media screen and (max-width: 768px) {
+  .font1
+    {
+      font-size: 18pt;
+    }
+  .font2
+    {
+      font-size: 12pt;
+    }
+  .font3,.font4, .font5
+    {
+      font-size: 12pt;
+    }
+  
+  .plane
+    {
+      left: 48%;
+    }
+}
   @media screen and (max-width: 550px) {
-    .col {
-      flex-basis: 100%;
+    .font1
+    {
+      font-size: 10pt;
     }
-    .responsive-image {
-      max-width: 90%;
-      text-align: center;
+  .font2
+    {
+      font-size: 8pt;
     }
+  .font3, .font5
+    {
+      font-size: 6pt;
+    }
+  .font4
+  {
+    top: -3%;
+    font-size: 6pt;
+  }
+  .plane
+    {
+      left: .25%;
+      top:10%;
+    }
+
     .container
     {
       background-position:0;
-      top: -420px;
     }
     
-  
-    .responsive-image 
-    {
-      max-width: 90%;
-      text-align: center;
-      font-size: 50%;
-    }
-  
-    nav
-    {
-       font-size: 11pt; 
-    }
     
     .column1
      {
+      position: relative;
+      left: 7.5%;
       height: 525px;
     }
     .column2 {
-      position: absolute;
-      float: left;
-      width: 4.5%;
+      left: -47%;
     }
   
     .column3 {
       height: 525px;
     }
-    .plane
-  {
-    
-    left: 2.5%;
-    
-  }
   .container
   {
     height: 25%;
   }
-  h1
-  {
-   font-size: 75%;
-   
-  }
-  h2
-  {
-   font-size: 50%;
-   
-  }
-  h3
-  {
-   font-size: 25%;
-   
-  }
-  h4
-  {
-   font-size: 25%;
-   
-  }
+ 
   .container-text
   {
-
-    top: 10%;
+    top:1%;
   }
+}
+
+@media screen and (max-width: 375px) {
+  .font1
+    {
+      font-size: 8pt;
+    }
+  .font2
+    {
+      font-size: 6pt;
+    }
+  .font3
+    {
+      font-size: 5pt;
+    }
+  .font4
+  {
+    top: 5%;
+    font-size: 6pt;
+  }
+  
+    .column3 
+    {
+      right: 1.5%;
+    }
 }

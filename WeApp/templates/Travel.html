@@ -9,77 +9,143 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="{% static 'Travel.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Playfair+Display:ital@1&family=Ysabeau+Office:ital,wght@1,100&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 <title>J&A:: Home</title>
 
 </head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class= "SmallScreens">Travel</div>
+  <a class="navbar-brand"> <div class = "font">J & A</div>   </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"> 
+    </span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'WeApp' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'itenary' %}">When&Where</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'FAQ' %}">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'RSVP' %}">RSVP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'Travel' %}">Travel</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <body class="responsive-image">
   
-  <nav>
-      <a href="{% url 'WeApp' %}">Home</a>
-          <a href="{% url 'itenary' %}">When/Where</a>
-          <a href="{% url 'FAQ' %}">FAQ</a>
-          <a href="{% url 'RSVP' %}">RSVP</a>
-          <a href="{% url 'Travel' %}">Travel</a>
-  </nav> 
-<br><br><br>
+  <br><BR><BR>
+
   
-    <div class = grid-container>
-      <h1>Flights</h1>
+    <div class = "grid-container">
+      
       <div class="text_container">
-        For flights the destination to fly into for the Wedding will be the Kahului Airport (OOG) in Maui.
-            Things to consider when deciding the flights is the 
-            time shift from central time to Hawaian time. If its 1pm in Texas its 8am in Hawaii.
-            <br>Another thing to consider is comfortability. This flight is a minimum to 6 hours in the air, so wear comfortable clothing, download ur favorite 
-            netflix series, and get a window seat.      
-            <h5> Important: </h5>
-              <h6>Fly Into: Kahului Airport (OOG)</h6>   
+        <div class="font1">Flights</div> 
+           The destination to fly into for the Wedding is Kahului Airport (OGG) in Maui.
+            Things to consider: time shift from central to Hawaian time. When it’s 1pm in Texas it's 8am in Hawaii.
+            Another thing to consider is comfortability. This flight is a minimum of 8 hours in the air, so wear comfortable clothing, download ur favorite 
+            netflix series, and get a window seat.<br><br>
+          
+            <div class="font2"> Important: </div> 
+            <ul class ="list">
+              <li>  <div class="font3">Fly Into: Kahului Airport (OGG)</div>   </li>
+              <li>  <div class="font3">Maui 5 hours behind cental time</div>   </li>
+            </ul>  
+            </div>
+                
+    </div>
+    <div class = "grid-container">
+      
+      <div class="text_container">
+        <div class="font1">Hotels</div> 
+          When booking a hotel please consider the distance from the wedding ceremony in
+          Kapalua and the luau in Lahaina. (see map below)
+          We have included hotel options in west Maui along with our wedding block at the Sheraton Resort & 
+          Spa in Kaanapali. Please consider taking advantage of this offer!
+          Also, we have someone to help with your booking. Lydia is our travel agent and will help you
+          with your booking. Booking with her is free and she can also help with booking a hotel, car 
+          and flight package with deeper savings! We don't want you to miss the opportunity for these 
+          special rates. please feel free to text Lydia @ 256-698-9566. We do got a room block with the Sheraton 
+          please contact us for more information <br><br>
+
+            <div class="font2"> Recommendations: </div> 
+            <ul class ="list">
+
+              <li>  <div class="font3"><a class="tags"  href="https://www.expedia.com/Lahaina-Hotels-Sheraton-Maui-Resort-Spa.h22894.Hotel-Information?chkin=2023-07-04&chkout=2023-07-05&x_pwa=1&rfrr=HSR&pwa_ts=1687895559534&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&useRewards=false&rm1=a2&regionId=800065&destination=Kaanapali%2C+Hawaii%2C+United+States+of+America&destType=CURRENT_LOCATION&selected=22894&latLong=20.926355%2C-156.69316&sort=RECOMMENDED&top_dp=804&top_cur=USD&mdpcid=US.META.HPA.HOTEL-CORESEARCH-desktop.HOTEL&mdpdtl=HTL.933.20230620.20230621.DDT.18.CID.2040586220.AUDID.7258829597.RRID.bex_us_desktop&gclid=CjwKCAjwpuajBhBpEiwA_ZtfhaVbpnQ7UV4XjTMwjn51_CyQO0K2p_17-qHb-2ajiJmie7XWOYCrgBoCwFAQAvD_BwE&mctc=10&userIntent=&selectedRoomType=210302996&selectedRatePlan=222088626&searchId=cced982b-14d8-45d8-bef3-143331e722cf">Sheraton Maui Resort & Spa</a></div>   </li>
+              <li>  <div class="font3"><a class="tags"  href="https://www.expedia.com/Lahaina-Hotels-Lahaina-Shores-Unit-528.h77146361.Hotel-Information?chkin=2024-03-19&chkout=2024-03-26&destType=BOUNDING_BOX&destination=Lahaina%2C%20Hawaii%2C%20United%20States%20of%20America&gclid=CjwKCAjwpuajBhBpEiwA_ZtfhaVbpnQ7UV4XjTMwjn51_CyQO0K2p_17-qHb-2ajiJmie7XWOYCrgBoCwFAQAvD_BwE&latLong=20.91159%2C-156.70928&mctc=10&mdpcid=US.META.HPA.HOTEL-CORESEARCH-desktop.HOTEL&mdpdtl=HTL.933.20230620.20230621.DDT.18.CID.2040586220.AUDID.7258829597.RRID.bex_us_desktop&pwa_ts=1687929317385&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&regionId=8499&rfrr=HSR&rm1=a2&searchId=f30ec02d-ecd9-4535-a16e-56a9b1b954f0&selectedRatePlan=000443b0ed29a611470e9fce559ca6ca4167&selectedRoomType=77146361&sort=RECOMMENDED&top_cur=USD&top_dp=234&useRewards=false&userIntent=&x_pwa=1">Lahaina Shores Unit 528</a></div>   </li>
+              <li>  <div class="font3"><a class="tags"  href="https://www.expedia.com/Lahaina-Hotels-Kaanapali-Beach-Hotel.h11554.Hotel-Information?chkin=2024-03-19&chkout=2024-03-26&x_pwa=1&rfrr=HSR&pwa_ts=1687929317372&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&useRewards=false&rm1=a2&regionId=8499&destination=Lahaina%2C+Hawaii%2C+United+States+of+America&destType=BOUNDING_BOX&latLong=20.91159%2C-156.70928&sort=RECOMMENDED&top_dp=392&top_cur=USD&mdpcid=US.META.HPA.HOTEL-CORESEARCH-desktop.HOTEL&mdpdtl=HTL.933.20230620.20230621.DDT.18.CID.2040586220.AUDID.7258829597.RRID.bex_us_desktop&gclid=CjwKCAjwpuajBhBpEiwA_ZtfhaVbpnQ7UV4XjTMwjn51_CyQO0K2p_17-qHb-2ajiJmie7XWOYCrgBoCwFAQAvD_BwE&mctc=10&userIntent=&selectedRoomType=5000&selectedRatePlan=5000&searchId=f30ec02d-ecd9-4535-a16e-56a9b1b954f0">Kaanapali Beach Hotel</a></div>   </li>
+
+            </ul>  
       </div>
                 
     </div>
-      <div class = grid-container>
-        <h1>Hotels</h1>
-          For hotels, the area of the wedding event will take place around the west coast of Maui.
-          Hotels are usually chosen by either brand, price, and/or amenemities.
-          Another recommendation to consider is driving after a good time. 
-          Therefore, between Kapalua where are wedding will be, and Lahaina where most of our excursion and Luao will be
-          will range between a 10 to 15 min drive. Below I'll state our top three while deciding 
-          for this wonderful occasion
-
-            {% for x in Data_hotels %}
-              <div class="row">
-                <div class="col"> 
-                    {{ x.H_name }}
-                      </div>
-                        <div class="col">
-                          {{ x.H_Desc }}
-                          </div>
-                            <div class="col">
-                              {{ x.H_Price }}
-                                </div>
-              </div>
-                  <div class="solid-line">  </div>    
-            {% endfor %}
-          
-      </div>
   
-      <div class = grid-container>
-        <h1>Excursion</h1>
-        {% for x in Data_excursion %}
-        <div class="row">
-          <div class="col"> 
-              {{ x.E_name }}
-                </div>
-                  <div class="col">
-                    {{ x.E_Desc }}
-                    </div>
-        </div>
-            <div class="solid-line">  </div>    
-      {% endfor %}
-          
-  
+    <div class = "grid-container">
+      <div class="text_container">
+        <div class="font1">Excursion</div>
+          We are having everything take place on the west side of the island. We have
+          planned wedding activities the day before, day of, and day after.
+          Please check out the itinerary for more information on those activities. 
+          Below we have added fun excursions in the area. <br><br>
+          <div class="font2"> Maui Excursions: </div> 
+          <ul class ="list">
+            <li>  <div class="font3"><a class="tags"  href="https://mauiwatersports.com/">JetSki's</a></div>   </li>
+            <li>  <div class="font3"><a class="tags"  href="https://finestkindsportfishingmaui.com/charter-rates/">Offshore Fishing</a></div>   </li>
+            <li>  <div class="font3"><a class="tags"  href="https://www.viator.com/tours/Maui/Molokini-and-Turtle-Town-Snorkeling-Adventure/d671-9281P1">Snorkeling</a></div>   </li>
+            <li>  <div class="font3"><a class="tags"  href="https://www.viator.com/tours/Maui/Maui-Atlantis-Submarine-Adventure/d671-3524MSUB">Submarine Adventures</a></div>   </li>
+          </ul>   
       </div>
+    </div>
+    
+  <div class = "grid-container">
+    <div class="text_container">
+      <div class="font1">Maui </div>
+      The island of Maui offers a wide range of attractions and activities for visitors.
+       One of its most famous landmarks is Haleakala National Park, home to the dormant 
+       Haleakala volcano, which attracts many visitors who come to witness the breathtaking 
+       sunrise or explore the unique flora and fauna of the park.
+      Maui is also renowned for its beautiful beaches, such as Kaanapali Beach and Wailea 
+      Beach, which offer crystal-clear waters, golden sands, and opportunities for swimming, 
+      snorkeling, and sunbathing.
+      The road to Hana is a scenic drive along the island's northeastern coast, renowned
+       for its picturesque views, waterfalls, lush rainforests, and hidden beaches. 
+       Many visitors enjoy taking their time to explore the numerous stops and 
+       attractions along the way. 
+      The town of Lahaina, once a historic whaling village, is now a popular tourist 
+      destination. Its Front Street is lined with shops, art galleries, restaurants,
+       and historical sites, preserving the island's rich cultural heritage.  
+      Maui also offers excellent opportunities for outdoor activities, including 
+      surfing, windsurfing, hiking, golfing, and whale watching. The waters surrounding 
+      the island are home to diverse marine life, and during the winter months, visitors 
+      can witness the awe-inspiring humpback whale migration.
 
+      
+      Below is a map of Maui highlighting the the airport, ceremony, hotel and Luau location. Please plan accordingly.
+      
+      <div class = "pic-container">
+        <img class="map"src="{% static 'images/MauiMap.jpeg' %}" >   
+      </div>
+             
+    </div>
+  </div>
+  
+  
 </body>
 
 </html>
