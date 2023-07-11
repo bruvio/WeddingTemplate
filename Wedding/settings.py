@@ -128,4 +128,3 @@ STATICFILES_DIR = [ os.path.join(BASE_DIR,'WeApp/static')]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-

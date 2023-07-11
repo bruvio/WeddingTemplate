@@ -19,7 +19,7 @@
       
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class= "SmallScreens">Home</div>
-          <a class="navbar-brand"> <div class = "font">J & A</div>   </a>
+          <a class="navbar-brand" href="{% url 'WeApp' %}"> <div class = "font"> J & A</div>   </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"> 
             </span>
@@ -51,7 +51,7 @@
       
     <div class = 'User_container'>
       <div class = 'left_container'>
-        <label for="exampleFormControlTextarea1" class="form-label">Name:</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Full-Name:</label>
           {% render_field form.name placeholder="your name" class+="form-control"  %}
             </div>
               <div class = 'right_container'>
@@ -60,7 +60,7 @@
                   </div>
                   {% csrf_token %}
             <div class="left_container">
-             
+             <br>
                 <button class="btn btn-primary" type="submit">Submit</button>
             </div>      
     </div>
