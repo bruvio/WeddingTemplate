@@ -2,7 +2,7 @@
 This website template represents a wedding website that utilizes a combination of Python, HTML, and CSS, with Django serving as its primary framework. 
 
 <p> 
-Welcome to our delightful project! Immerse yourself in the enchanting journey we have crafted for you. As you explore this exquisite website, allow us to guide you through the various pages, each designed to captivate your heart.<br>
+Welcome to our delightful project! Immerse yourself in this Wedding template that I have crafted for you. As you explore this exquisite website, allow us to guide you through the various pages, each designed to captivate your heart.<br>
 
 Step into the entrance of the home page. With a beautiful picture of love and excitement as the template introduces the union.<br>
 
