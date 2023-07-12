@@ -3,8 +3,8 @@ This website template represents a wedding website that utilizes a combination o
 
 
 The project's pip list includes essential packages such as <br>
-      Django-widget-tweaks,   pip install Django-widget-tweaks <br>
       <ul> 
+            <li>  Django-widget-tweaks       pip install Django-widget-tweaks<br></li>
             <li>   boto,                     pip install django-boto <br></li>
             <li>   Django-lockdown,          pip install django-lockdown <br></li>
             <li>   Django-storage.           pip install django-storages <br></li>
